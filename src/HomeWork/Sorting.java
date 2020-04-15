@@ -36,9 +36,6 @@ class ReverseComparator implements Comparator<Integer> {
         } else if (o1 == 4) {
             return -1;
         }
-        if (o1 >= 100) {
-            return o1-o2;
-        }
         return o1 - o2;
     }
 }
