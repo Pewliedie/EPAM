@@ -16,19 +16,11 @@ public class Sorting {
         Collections.sort(sortedInts, new ReverseComparator());
         //Создаем лист из уникальных объектов
         Set<Integer> setOfSortedIntegers = new LinkedHashSet<>(sortedInts);
+        int count =0;
+        for (Integer ints:setOfSortedIntegers) {
+            count++;
+        }
         System.out.println(setOfSortedIntegers);
-    }
-}
-
-class ReverseComparator implements Comparator<Integer> {
-    @Override
-    public int compare(Integer o1, Integer o2) {
-        if (o1 == 4) {
-            return -1;
-        }
-        if (o1 >= 100) {
-            return 1;
-        }
-        return o1 - o2;
+        System.out.println("Amount of unique elements is: "+count);
     }
 }
