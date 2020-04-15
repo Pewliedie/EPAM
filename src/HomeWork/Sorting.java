@@ -17,6 +17,7 @@ public class Sorting {
         //Создаем лист из уникальных объектов
         Set<Integer> setOfSortedIntegers = new LinkedHashSet<>(sortedInts);
         int count =0;
+        //Счет уникальных элементов
         for (Integer ints:setOfSortedIntegers) {
             count++;
         }
