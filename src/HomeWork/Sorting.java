@@ -7,19 +7,19 @@ public class Sorting {
         Scanner scanner = new Scanner(System.in);
         //Создаем массив чисел,исплользуя regex ",".
         String[] input = scanner.nextLine().split(",");
-        ArrayList<Integer> sortedInts = new ArrayList<Integer>();
+        ArrayList<Integer> ints = new ArrayList<Integer>();
         //преобразовываем элементы массива в Integer.
         for (String x : input) {
-            sortedInts.add(Integer.valueOf(x));
+            ints.add(Integer.valueOf(x));
         }
         //сортируем массив используя компаратор
-        Collections.sort(sortedInts, new ReverseComparator());
-        Collections.sort(sortedInts,new ReverseComparator2());
+        Collections.sort(ints, new ReverseComparator());
+        Collections.sort(ints,new ReverseComparator2());
         //Создаем лист из уникальных объектов
-        Set<Integer> setOfSortedIntegers = new LinkedHashSet<>(sortedInts);
+        Set<Integer> setOfSortedIntegers = new LinkedHashSet<>(ints);
         int count = 0;
         //Счет уникальных элементов
-        for (Integer ints : setOfSortedIntegers) {
+        for (Integer x : setOfSortedIntegers) {
             count++;
         }
         System.out.println(setOfSortedIntegers);
