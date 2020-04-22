@@ -20,7 +20,7 @@ public class Main {
         autoShop.showPriceAllAvailableCars();
         System.out.println();
 
-        autoShop.buyCar(2341);
+        autoShop.buyCar(car1);
 
         System.out.println();
         autoShop.showPriceAllAvailableCars();

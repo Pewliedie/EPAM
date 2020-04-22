@@ -17,23 +17,10 @@ public class AutoShop {
         }
     }
 
-    // покупка автомобиля  по car ID
-    public void buyCar(int id) {
-        Iterator<Car> carIterator = listOfCarsForSale.iterator();
-        boolean bool = false;
-        while (carIterator.hasNext()) {
-            Car car = carIterator.next();
-            if (car.getCarID() == id) {
-                System.out.println("The car " + car.getMark() + " has been sold");
-                carIterator.remove();
-                bool = true;
-                break;
-            }
-        }
-        if (bool == false) {
-            System.out.println("There is no such car");
-        }
-
+    // покупка автомобиля
+    public void buyCar(Car car) {
+        System.out.println("The car" + car.getMark() + " has been sold");
+        listOfCarsForSale.remove(car);
     }
 
     //показать все доступные автомобили
