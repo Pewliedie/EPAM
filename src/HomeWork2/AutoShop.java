@@ -19,7 +19,7 @@ public class AutoShop {
 
     // покупка автомобиля
     public void buyCar(Car car) {
-        System.out.println("The car" + car.getMark() + " has been sold");
+        System.out.println("The car " + car.getMark() + " has been sold");
         listOfCarsForSale.remove(car);
     }
 
