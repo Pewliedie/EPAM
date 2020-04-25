@@ -40,10 +40,6 @@ public class Main {
         guitarShop.showCart();
         System.out.println();
         guitarShop.printAllProducts();
-
-
-        //guitarShop.printAllProducts();
-
     }
 }
 
