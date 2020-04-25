@@ -6,7 +6,7 @@ public class Main {
         GuitarShop guitarShop = new GuitarShop();
 
         Guitar guitar1 = new ElectricGuitar("Fender Stratocaster C2",
-                4000, "Oak", "V", 6, "Humbuckers");
+                4000, "Oak", "V", "Humbuckers");
 
         Guitar guitar2 = new BassGuitar("Fender B2",
                 2500, "Cedrus", "U", "Modern D");
@@ -18,7 +18,7 @@ public class Main {
                 2000, "Cypress ", "U", "fixed");
 
         Guitar guitar5 = new ElectricGuitar("Yamaha erg C45",
-                8000, "Red cedar", "C", 7, "Double coil");
+                8000, "Red cedar", "C", "Double coil");
 
         guitarShop.add(guitar1);
         guitarShop.add(guitar2);
