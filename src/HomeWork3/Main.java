@@ -9,9 +9,9 @@ public class Main {
                 4000, "Oak", "V", "Humbuckers");
 
         Guitar guitar2 = new BassGuitar("Fender B2",
-                2500, "Cedrus", "U", "Modern D");
+                2500, "Cedrus", "U", "Humbucker", "modern D");
 
-        Guitar guitar3 = new AcousticGuitar("Ibanez i4",
+        Guitar guitar3 = new AcousticGuitar("Ibanezz i4",
                 17000, "Oak", "C", "floating");
 
         Guitar guitar4 = new AcousticGuitar("Hohner C45",
@@ -26,7 +26,6 @@ public class Main {
         guitarShop.add(guitar4);
         guitarShop.add(guitar5);
 
-        guitarShop.printAllProducts();
 
         guitarShop.addToCart(guitar2);
         guitarShop.addToCart(guitar4);

@@ -1,11 +1,11 @@
 package HomeWork3;
 
-public class BassGuitar extends Guitar {
+public class BassGuitar extends ElectricGuitar {
 
     private String shapeOfDeck;
 
-    public BassGuitar(String name, double price, String woodSpecies, String neckShape, String shapeOfDeck) {
-        super(name, price, woodSpecies, neckShape);
+    public BassGuitar(String name, double price, String woodSpecies, String neckShape, String typeOfPickup, String shapeOfDeck) {
+        super(name, price, woodSpecies, neckShape, typeOfPickup);
         this.shapeOfDeck = shapeOfDeck;
     }
 
