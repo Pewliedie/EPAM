@@ -14,30 +14,13 @@ public class Main {
         Guitar guitar3 = new AcousticGuitar("Ibanezz i4",
                 17000, "Oak", "C", "floating");
 
-        Guitar guitar4 = new AcousticGuitar("Hohner C45",
-                2000, "Cypress ", "U", "fixed");
-
-        Guitar guitar5 = new ElectricGuitar("Yamaha erg C45",
-                8000, "Red cedar", "C", "Double coil");
 
         guitarShop.add(guitar1);
         guitarShop.add(guitar2);
         guitarShop.add(guitar3);
-        guitarShop.add(guitar4);
-        guitarShop.add(guitar5);
 
+        guitarShop.sell(guitar2);
 
-        guitarShop.addToCart(guitar2);
-        guitarShop.addToCart(guitar4);
-
-        System.out.println();
-        guitarShop.countSum();
-
-        guitarShop.buyAllCart();
-        System.out.println();
-
-        guitarShop.showCart();
-        System.out.println();
         guitarShop.printAllProducts();
     }
 }
