@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Aquarium aquarium = new Aquarium();
+
         boolean flag = true;
         while (flag) {
             System.out.println("Menu: Add, Remove, Change, Print all, Exit");
